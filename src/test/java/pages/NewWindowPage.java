@@ -8,12 +8,12 @@ import aquality.selenium.core.elements.interfaces.IElement;
 import aquality.selenium.forms.Form;
 
 public class NewWindowPage extends Form {
-    private static final String NAME = "New Window";
+    private static final String name = "New Window";
     private final IElement header = AqualityServices.getElementFactory()
             .getLink(By.xpath("//h3"), "New Window");
 
     public NewWindowPage() {
-        super(By.xpath(String.format(LocatorConstants.PRECISE_TEXT_XPATH, NAME)), NAME);
+        super(By.xpath(String.format(LocatorConstants.PRECISE_TEXT_XPATH, name)), name);
     }
 
     public String getHeaderText() {

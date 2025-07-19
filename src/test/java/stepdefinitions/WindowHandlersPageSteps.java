@@ -18,8 +18,8 @@ public class WindowHandlersPageSteps {
     }
 
     @When("I click the Click here link")
-    public void clickClickHereLink() {
+    public void clickNewPageLink() {
         step("I click the Click here link");
-        windowHandlersPage.clickClickHereLink();
+        windowHandlersPage.clickNewPageLink();
     }
 }

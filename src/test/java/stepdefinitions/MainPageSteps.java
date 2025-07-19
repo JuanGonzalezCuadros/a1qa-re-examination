@@ -12,13 +12,13 @@ public class MainPageSteps {
     MainPage mainPage = new MainPage();
 
     @When("I select the {string} link and click it")
-    public void goTO(String page) {
+    public void goTo(String page) {
         step("I select the " + page + " link and click it");
         mainPage.clickNavigationLink(page);
     }
 
     @Then("the main page is displayed")
-    public void mainPageIsDisplayed() {
+    public void isMainPageIsDisplayed() {
         step("the main page is displayed");
         Assert.assertTrue(mainPage.state().isDisplayed(), "The main page is not displayed");
     }

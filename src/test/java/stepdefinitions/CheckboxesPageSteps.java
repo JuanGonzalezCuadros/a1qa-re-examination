@@ -13,7 +13,7 @@ public class CheckboxesPageSteps {
     CheckboxesPage checkboxesPage = new CheckboxesPage();
 
     @Then("Checkboxes page is open")
-    public void CheckboxesPage() {
+    public void isCheckboxesPageDisplayed() {
         step("Checkboxes page is open");
         Assert.assertTrue(checkboxesPage.state().isDisplayed(), "The Checkboxes page is not open");
     }
